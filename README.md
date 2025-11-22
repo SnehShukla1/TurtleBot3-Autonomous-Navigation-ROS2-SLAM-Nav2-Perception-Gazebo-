@@ -15,19 +15,21 @@ colcon build --cmake-clean-cache
 source install/setup.bash
 ```
 
+---
+
 ### 2. Launch Gazebo with custom world
 
 ```
 ros2 launch turtlebot3_gazebo turtlebot3_my_world.launch.py
 ```
-
+---
 ### 3. Teleop control (New Terminal)
 
 ```
 source ~/Sneh_project_adjustments/src/turtlebot3_ws/install/setup.bash
 ros2 run turtlebot3_teleop teleop_keyboard
 ```
-
+---
 ### 4. Object detection
 In a New Terminal:
 
@@ -38,7 +40,7 @@ colcon build --packages-select object_detection --symlink-install
 source install/setup.bash
 ros2 launch object_detection object_detection.launch.py
 ```
-
+---
 ### 5. SLAM with slam_toolbox
 
 Start simulation (robot state publisher)
@@ -64,7 +66,7 @@ Visualize in RViz2 (In a New Terminal)
 ```
 rviz2
 ```
-
+---
 ### 6. A* path planning
 Keep SLAM and Robot state publisher on then Run A* planner (In a New Terminal):
 
@@ -73,7 +75,7 @@ Keep SLAM and Robot state publisher on then Run A* planner (In a New Terminal):
 ```
 
 To visualize the planned path, open RViz2 and add the path planning topics/markers.
-
+---
 ### 7. TF frames PDF
 
 In a New Terminal Run:
