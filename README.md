@@ -100,3 +100,29 @@ In a New Terminal Run:
 ```
 ros2 run tf2_tools view_frames
 ```
+
+---
+## Downloading YOLOv3 Weights (Required for Object Detection)
+
+GitHub does not allow files larger than 100 MB to be stored in the repo, so the YOLOv3 weights file (`src/yolov3.weights`, ~200+ MB) must be downloaded manually before running the object detection node.
+
+From your home directory:
+
+```
+cd ~/Sneh_project_adjustments/src
+```
+Download official YOLOv3 COCO weights from the original YOLO website
+```
+wget https://pjreddie.com/media/files/yolov3.weights
+```
+
+This will create the file:
+~/Sneh_project_adjustments/src/yolov3.weights
+
+
+The repository already includes the matching configuration and class labels:
+
+- `src/yolov3.cfg`
+- `src/coco.names`
+
+With all three files in place (`yolov3.weights`, `yolov3.cfg`, `coco.names`), you can now follow the **Object detection** steps in the section above.
