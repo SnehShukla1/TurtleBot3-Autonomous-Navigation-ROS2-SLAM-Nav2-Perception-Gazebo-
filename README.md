@@ -20,7 +20,7 @@ The focus is on reproducible bring-up of an autonomous navigation pipeline:
 
 This repo excludes the YOLOv3 weights file (src/yolov3.weights, >200MB).
 See README for instructions to download it from the official source before running object detection.
-
+---
 ## How to Run
 
 ---
