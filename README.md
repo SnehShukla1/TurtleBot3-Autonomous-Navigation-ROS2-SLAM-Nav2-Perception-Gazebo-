@@ -1,5 +1,23 @@
 # TurtleBot3 ROS2 Autonomous Navigation
 
+<img width="857" height="575" alt="Screenshot 2025-04-19 123756" src="https://github.com/user-attachments/assets/481c496a-76d6-4fd0-b421-4ab4e2e5f04f" />
+
+<img width="826" height="455" alt="Screenshot 2025-06-06 210925" src="https://github.com/user-attachments/assets/a0d1faf7-55ac-43ac-b4db-49e7aa91fffb" />
+
+
+<img width="776" height="431" alt="Screenshot 2025-06-06 212656" src="https://github.com/user-attachments/assets/4069d8af-f234-4107-a2cf-5886c38642dd" />
+
+
+# TurtleBot3 ROS2 Autonomous Navigation
+
+This repository contains a complete ROS2-based autonomy stack for a TurtleBot3-style mobile robot in Gazebo, including teleoperation, SLAM, global path planning, and object detection. The project ties together a custom TurtleBot3 URDF, a custom Gazebo world, `slam_toolbox` for online mapping, an A* planner for path generation, and RViz2 for rich visualization of maps, poses, and paths.
+
+The focus is on reproducible bring-up of an autonomous navigation pipeline:
+- Launch a TurtleBot3 in a custom Gazebo environment and drive it with keyboard teleop.
+- Build a 2D occupancy grid map in real time using `slam_toolbox` with simulated time.
+- Plan and visualize collision-free paths using an A* planner over the generated map.
+- Run a separate ROS2 workspace for YOLO-based object detection on camera data.
+
 This repo excludes the YOLOv3 weights file (src/yolov3.weights, >200MB).
 See README for instructions to download it from the official source before running object detection.
 
